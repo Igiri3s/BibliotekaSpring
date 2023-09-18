@@ -22,10 +22,12 @@ public class BorrowMapper {
     public BorrowDto fromBorrowToBorrowDto(Borrow borrow){
 
         BorrowDto borrowDto = new BorrowDto();
-
         borrowDto.setBorrowId(borrow.getBorrowId());
         borrowDto.setBookId(borrow.getBook().getBookId());
+        borrowDto.setBookTitle((borrow.getBook().getTitle()));
         borrowDto.setUserId(borrow.getUser().getUserId());
+        borrowDto.setUserName(borrow.getUser().getName());
+        borrowDto.setUserSurname(borrow.getUser().getSurname());
 
         return borrowDto;
 

@@ -24,19 +24,15 @@ public class BorrowController {
     @GetMapping("/getAll")
     GetBorrowsResponse getAllBorrows() {
         return borrowService.getAllBorrows();
-
     }
 
     @GetMapping("/getAll/{id}")
     GetBorrowsResponse getAllBorrowsFromSpecificUser(@PathVariable("id") Integer id) {
         return borrowService.getAllBorrowsFromSpecificUser(id);
-
-
     }
 
     @PostMapping("/add")
     public ResponseEntity<String> createBorrow(@RequestBody CreateBorrowReqest borrow) {
-
         borrowService.borrowBook(borrow);
         return ResponseEntity.ok(": ksiazka o id: " + borrow.getBookId() + " zostala wyporzyczona");
     }

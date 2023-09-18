@@ -1,17 +1,17 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Borrow",
-  "description": "schema for borrows array",
+  "title": "Users",
+  "description": "schema for users array",
   "type": "object",
   "properties": {
-    "borrows": {
+    "users": {
       "type": "array",
       "items": {
-        "$ref": "BorrowDto.json"
+        "$ref": "UserDto.json"
       }
     }
   },
   "required": [
-    "borrows"
+    "users"
   ]
 }

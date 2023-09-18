@@ -2,13 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "borrowId": {
-      "type": "integer"
-    },
     "userId": {
-      "type": "integer"
-    },
-    "bookId": {
       "type": "integer"
     },
     "userName": {
@@ -17,9 +11,6 @@
     "userSurname": {
       "type": "string"
     },
-    "bookTitle": {
-      "type": "string"
-    },
-    "required": ["borrowId","userName","userSurname","bookTitle"]
+    "required": ["userId","userName","userSurname"]
   }
 }

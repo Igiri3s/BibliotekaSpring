@@ -77,21 +77,6 @@ public class BorrowServiceImp implements BorrowService {
             responseOfAllBorrows.getBorrows().add(oneBorrowResponse);
         }
         return responseOfAllBorrows;
-        /*TODO Stworz DTO DLA DANYCH DO FRONTU
-  frontedn nie chce przyjmoawc takiego gowna jakie ty probujesz zwracać, wiec stwórz sobie dto zwierajace takie rzeczy jaki Imie i nazwisko + nazwa wyporzyczonej ksiązki
-         przemapuj to w serwisie i zwroc ten wlasnie obiekt, wtedy bedziesz mogl ladnie na frontendzie sobie wyswietlac
-         */
-        //TODO przydala by sie jakas walidaca, np zeby sie nie dalo wyporzyczyc 2 razy tej samej ksiazi ITD
-
-        //TODO jakas forma logowania, spring security cyz inne gowno
-
-        /*TODO zrob testy
-        tego nie trzeba tlumaczyc, ale trzeba sprawdzic pozostale mappery i servisy
-         */
-        /*TODO zrób frontend
-        trzeba zrobic frontend moszesz się meczyc z thymeLeaf albo sprawdzic sobie Bootstrapa (kacper poleca)
-         */
-
     }
 
     @Override
@@ -109,6 +94,17 @@ public class BorrowServiceImp implements BorrowService {
         return responseOfAllBorrows;
 
     }
+
+    //TODO przydala by sie jakas walidaca, np zeby sie nie dalo wyporzyczyc 2 razy tej samej ksiazi ITD
+
+    //TODO jakas forma logowania, spring security cyz inne gowno
+
+        /*TODO zrob testy
+        tego nie trzeba tlumaczyc, ale trzeba sprawdzic pozostale mappery i servisy
+         */
+        /*TODO zrób frontend
+        trzeba zrobic frontend moszesz się meczyc z thymeLeaf albo sprawdzic sobie Bootstrapa (kacper poleca)
+         */
 //TODO zrobic porzadnie PostContruct
 
     @PostConstruct
