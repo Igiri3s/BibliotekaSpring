@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Borrows",
+  "description": "schema for borrows",
+  "type": "borrow",
+  "properties": {
+    "borrows": {
+      "type": "array",
+      "items": {
+        "$ref": "BorrowDto.json"
+      }
+    }
+  },
+  "required": [
+    "borrows"
+  ]
+}

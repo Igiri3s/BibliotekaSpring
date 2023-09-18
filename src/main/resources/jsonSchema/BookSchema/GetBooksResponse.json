@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Task",
+  "description": "schema for tasks",
+  "type": "object",
+  "properties": {
+    "books": {
+      "type": "array",
+      "items": {
+        "$ref": "GetBookResponse.json"
+      }
+    }
+  },
+  "required": [
+    "books"
+  ]
+}
