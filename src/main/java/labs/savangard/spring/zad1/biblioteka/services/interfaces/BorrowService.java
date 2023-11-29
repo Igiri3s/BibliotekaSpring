@@ -9,7 +9,7 @@ public interface BorrowService {
 
     GetBorrowResponse endBorrowing(Integer id);
 
-    public BorrowDto findById(Integer id);
+    BorrowDto findById(Integer id);
 
     GetBorrowsResponse getAllBorrowsFromSpecificUser(Integer id);
 

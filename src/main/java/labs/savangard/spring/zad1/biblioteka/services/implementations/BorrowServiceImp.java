@@ -105,7 +105,6 @@ public class BorrowServiceImp implements BorrowService {
         /*TODO zrób frontend
         trzeba zrobic frontend moszesz się meczyc z thymeLeaf albo sprawdzic sobie Bootstrapa (kacper poleca)
          */
-//TODO zrobic porzadnie PostContruct
 
     @PostConstruct
     private void addExampleDataToDatabase() {
